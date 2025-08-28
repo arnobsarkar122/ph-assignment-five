@@ -11,9 +11,58 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-style {
+        font-family: "Hind Madurai", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <header></header>
+  <body class="font-style">
+    <header>
+      <nav
+        class="border border-[red] w-11/12 mx-auto lg:flex lg:justify-between"
+      >
+        <div class="flex justify-center items-center gap-[10px]">
+          <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="" />
+
+          <img src="./assets/Emergency Service.svg" alt="" />
+        </div>
+        <div
+          class="flex items-center justify-center lg:mt-0 mt-5 lg:gap-5 gap-3"
+        >
+          <button
+            class="btn btn-active w-[120px] h-[52px] p-3 bg-[#41FF6B1A] rounded-full flex gap-3"
+          >
+            <span id="love-counter" class="font-black text-base text-[#000000]"
+              >0</span
+            ><img src="./assets/love.svg" alt="" />
+          </button>
+          <button
+            class="btn btn-active w-[120px] h-[52px] p-3 bg-[#41FF6B1A] rounded-full flex gap-3"
+          >
+            <span id="coin-counter" class="font-black text-base text-[#000000]"
+              >100</span
+            ><img class="w-[24px] h-[24px]" src="./assets/star.svg" alt="" />
+          </button>
+          <button
+            class="btn btn-active w-[120px] h-[52px] p-3 bg-[#00A63E] rounded-full flex gap-3 font-semibold text-[#fff]"
+          >
+            <span
+              id="copy-counter"
+              class="font-semibold text-base text-[#FFFFFF]"
+              >0</span
+            >Copy
+          </button>
+        </div>
+      </nav>
+    </header>
     <main></main>
     <script src="./web.js"></script>
   </body>
