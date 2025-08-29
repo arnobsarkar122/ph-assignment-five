@@ -43,7 +43,7 @@ document.getElementById("card-parent").addEventListener("click", function (e) {
       let getdiv = document.createElement("div");
       getdiv.innerHTML = `
        <div
-                  class="bg-[#FAFAFA] p-4 rounded-lg flex justify-between my-4"
+                  class="bg-[#FAFAFA] p-4 rounded-lg flex justify-between my-4 lg:gap-0 gap-3"
                 >
                   <div>
                     <h2 class="text-[#111] text-lg font-semibold">${title}</h2>
